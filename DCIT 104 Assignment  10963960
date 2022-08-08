@@ -1,0 +1,21 @@
+// write a program to calculate the average of all even integers between 1 and a certain number
+import java.util.*;
+public class Numbers{
+
+public class void main(string[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number of terms");
+    int n = sc.nextInt();//100
+
+    int sum = 0, count = 0;
+
+    for(int i =1; i<=n; i++)
+       if((i%2) == 0) {
+           sum = sum + i;
+           count++;
+       }
+    double avg = sum/count;
+
+    System.out.println("The average of all even integers from 1 to "+n=" is:"+avg);
+    }
+}
